@@ -19,6 +19,10 @@ spring:
           uri: lb://travel-service
           predicates:
             - Path=/travelservice/api/v1/**
+        - id: hotel-service
+          uri: lb://hotel-service
+          predicates:
+            - Path=/hotelservice/api/v1/**
 
 
 eureka:
