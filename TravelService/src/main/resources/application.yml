@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: travel-service
+  codec:
+    max-in-memory-size: 20MB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/travelservice
+      auto-index-creation: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  servlet:
+    context-path: /travelservice
+  port: 8000
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+

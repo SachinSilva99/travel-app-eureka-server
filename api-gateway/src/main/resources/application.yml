@@ -15,6 +15,10 @@ spring:
           uri: lb://vehicle-service
           predicates:
             - Path=/vehicleservice/api/v1/**
+        - id: travel-service
+          uri: lb://travel-service
+          predicates:
+            - Path=/travelservice/api/v1/**
 
 
 eureka:
