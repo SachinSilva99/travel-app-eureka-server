@@ -1,0 +1,26 @@
+server:
+  port: 8095
+  servlet:
+    context-path: /vehicleservice
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/vehicleservice
+      auto-index-creation: true
+  application:
+    name: vehicle-service
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+

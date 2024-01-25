@@ -17,3 +17,10 @@ security:
     expiration: 86400000
     refresh-token:
       expiration: 604800000
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
