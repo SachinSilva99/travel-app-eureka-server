@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: guide-service
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/guideervice
+      auto-index-creation: true
+
+server:
+  servlet:
+    context-path: /guideservice
+  port: 8097
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
