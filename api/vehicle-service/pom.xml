@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sachin</groupId>
-	<artifactId>vehicleservice</artifactId>
+	<artifactId>vehicle-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Vehicle Service</name>
 	<description>Vehicle Service</description>

@@ -27,7 +27,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
-        System.out.println("vehicle admin filter start");
+/*        System.out.println("vehicle admin filter start");
         String authorizationHeader = request.getHeader("Authorization");
         if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
             String jwtToken = authorizationHeader.substring(7);
@@ -42,7 +42,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         } else {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         }
-        System.out.println("vehicle admin filter end");
+        System.out.println("vehicle admin filter end");*/
 
     }
 

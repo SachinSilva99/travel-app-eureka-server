@@ -22,7 +22,7 @@ public class WebApp {
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         return modelMapper;
     }
-    @Bean
+/*    @Bean
     public FilterRegistrationBean<JwtAuthenticationFilter> hotelAdminFilter(){
         FilterRegistrationBean<JwtAuthenticationFilter> registrationBean
                 = new FilterRegistrationBean<>();
@@ -30,7 +30,7 @@ public class WebApp {
         registrationBean.setFilter(new JwtAuthenticationFilter());
         registrationBean.addUrlPatterns("/api/v1/vehicles/*");
         return registrationBean;
-    }
+    }*/
   /*  @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();

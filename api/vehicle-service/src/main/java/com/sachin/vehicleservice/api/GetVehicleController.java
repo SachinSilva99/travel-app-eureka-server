@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/api/v1/getvehicles", produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*", allowedHeaders = "Authorization")
+@CrossOrigin(origins = "*")
 public class GetVehicleController {
     private final VehicleService vehicleService;
 

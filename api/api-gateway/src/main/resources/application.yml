@@ -6,11 +6,17 @@ spring:
     name: api-gateway
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
       routes:
         - id: user-service
           uri: lb://user-service
           predicates:
-              - Path=/userservice/api/v1/**
+            - Path=/userservice/api/v1/**
         - id: vehicle-service
           uri: lb://vehicle-service
           predicates:
@@ -27,7 +33,8 @@ spring:
           uri: lb://guide-service
           predicates:
             - Path=/guideservice/api/v1/**
-
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
 
 eureka:
   client:
